@@ -1,45 +1,84 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Download Link</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            text-align: center;
-            padding: 40px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        a {
-            font-size: 24px;
-            color: #1a73e8;
-            text-decoration: none;
-            padding: 15px 30px;
-            border: 2px solid #1a73e8;
-            border-radius: 8px;
-            display: inline-block;
-            margin-top: 20px;
-        }
-        a:hover {
-            background-color: #1a73e8;
-            color: white;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>cliquer pour telecharger</h1>
-        <a href="https://drive.google.com/uc?export=download&id=19QnqPnXvcGcuZ7TDk9nM8C18k-8ssNq0" target="_blank">clique ICI</a>
-        <p style="margin-top: 30px; color: #666;">Save this page address: <strong>yourusername.github.io</strong></p>
-    </div>
-</body>
-</html>
+INSERT INTO `wilaya` (`id_wilaya`, `nom_wilaya`) VALUES
+(1, 'Adrar'), (2, 'Chlef'), (3, 'Laghouat'), (4, 'Oum El Bouaghi'), (5, 'Batna'),
+(6, 'Béjaïa'), (7, 'Biskra'), (8, 'Béchar'), (9, 'Blida'), (10, 'Bouira'),
+(11, 'Tamanrasset'), (12, 'Tébessa'), (13, 'Tlemcen'), (14, 'Tiaret'), (15, 'Tizi Ouzou'),
+(16, 'Alger'), (17, 'Djelfa'), (18, 'Jijel'), (19, 'Sétif'), (20, 'Saïda'),
+(21, 'Skikda'), (22, 'Sidi Bel Abbès'), (23, 'Annaba'), (24, 'Guelma'), (25, 'Constantine'),
+(26, 'Médéa'), (27, 'Mostaganem'), (28, 'M\'Sila'), (29, 'Mascara'), (30, 'Ouargla'),
+(31, 'Oran'), (32, 'El Bayadh'), (33, 'Illizi'), (34, 'Bordj Bou Arreridj'), (35, 'Boumerdès'),
+(36, 'El Tarf'), (37, 'Tindouf'), (38, 'Tissemsilt'), (39, 'El Oued'), (40, 'Khenchela'),
+(41, 'Souk Ahras'), (42, 'Tipaza'), (43, 'Mila'), (44, 'Aïn Defla'), (45, 'Naâma'),
+(46, 'Aïn Témouchent'), (47, 'Ghardaïa'), (48, 'Relizane'), (49, 'El M\'Ghair'), (50, 'El Meniaa'),
+(51, 'Ouled Djellal'), (52, 'Bordj Baji Mokhtar'), (53, 'Béni Abbès'), (54, 'Timimoun'), (55, 'Touggourt'),
+(56, 'Djanet'), (57, 'In Salah'), (58, 'In Guezzam');
+
+
+-- Communes for Tizi Ouzou (Wilaya 15)
+INSERT INTO `commune` (`id_commune`, `nom_commune`, `id_wilaya`) VALUES
+(1501, 'Tizi Ouzou', 15),
+(1502, 'Ain El Hammam', 15),
+(1503, 'Akbil', 15),
+(1504, 'Freha', 15),
+(1505, 'Souamaâ', 15),
+(1506, 'Mechtras', 15),
+(1507, 'Irdjen', 15),
+(1508, 'Timizart', 15),
+(1509, 'Makouda', 15),
+(1510, 'Draâ El Mizan', 15),
+(1511, 'Tizi Gheniff', 15),
+(1512, 'Bounouh', 15),
+(1513, 'Aït Chafâa', 15),
+(1514, 'Frikat', 15),
+(1515, 'Beni Aïssi', 15),
+(1516, 'Aït Zmenzer', 15),
+(1517, 'Iferhounène', 15),
+(1518, 'Azazga', 15),
+(1519, 'Illoula Oumalou', 15),
+(1520, 'Yakouren', 15),
+(1521, 'Larbaâ Nath Irathen', 15),
+(1522, 'Tizi Rached', 15),
+(1523, 'Zekri', 15),
+(1524, 'Ouaguenoun', 15),
+(1525, 'Aïn Zaouia', 15),
+(1526, 'M\'kira', 15),
+(1527, 'Aït Yahia', 15),
+(1528, 'Aït Mahmoud', 15),
+(1529, 'Mâatkas', 15),
+(1530, 'Aït Boumahdi', 15),
+(1531, 'Abi Youcef', 15),
+(1532, 'Beni Douala', 15),
+(1533, 'Illilten', 15),
+(1534, 'Bouzeguène', 15),
+(1535, 'Aït Aggouacha', 15),
+(1536, 'Ouadhia', 15),
+(1537, 'Azeffoun', 15),
+(1538, 'Tigzirt', 15),
+(1539, 'Aït Aïssa Mimoun', 15),
+(1540, 'Boghni', 15),
+(1541, 'Ifigha', 15),
+(1542, 'Aït Oumalou', 15),
+(1543, 'Tirmitine', 15),
+(1544, 'Akerrou', 15),
+(1545, 'Yatafen', 15),
+(1546, 'Ath Zikki', 15),
+(1547, 'Draâ Ben Khedda', 15),
+(1548, 'Aït Ouacif', 15),
+(1549, 'Idjeur', 15),
+(1550, 'Mekla', 15),
+(1551, 'Tizi N\'Tleta', 15),
+(1552, 'Aït Yenni', 15),
+(1553, 'Aghribs', 15),
+(1554, 'Iflissen', 15),
+(1555, 'Boudjima', 15),
+(1556, 'Aït Yahia Moussa', 15),
+(1557, 'Souk El Thenine', 15),
+(1558, 'Aït Khellili', 15),
+(1559, 'Sidi Namane', 15),
+(1560, 'Iboudraren', 15),
+(1561, 'Agouni Gueghrane', 15),
+(1562, 'Mizrana', 15),
+(1563, 'Imsouhel', 15),
+(1564, 'Tadmaït', 15),
+(1565, 'Aït Bouaddou', 15),
+(1566, 'Assi Youcef', 15),
+(1567, 'Aït Toudert', 15);
